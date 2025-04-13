@@ -1,0 +1,38 @@
+{
+  "direction": "horizontal",
+  "className": "max-w-full rounded-lg border",
+  "panels": [
+    {
+      "id": "panel-1",
+      "defaultSize": 30,
+      "minSize": 20,
+      "maxSize": 60,
+      "content": "Panel 1 - This is a long text to test horizontal scrolling. It should extend beyond the panel width when horizontal scrolling is enabled. ",
+      "contentContainerClass": "flex h-[200px] items-center justify-center p-6",
+      "textClass": "font-semibold",
+      "isScrollable": {
+        "enabled": true,
+        "direction": "both"
+      }
+    },
+    {
+      "id": "panel-2",
+      "defaultSize": 40,
+      "minSize": 20,
+      "maxSize": 70,
+      "content": "Panel 2",
+      "contentContainerClass": "flex h-[200px] items-center justify-center p-6",
+      "textClass": "font-semibold"
+    },
+    {
+      "id": "panel-3",
+      "defaultSize": 30,
+      "minSize": 20,
+      "maxSize": 50,
+      "content": "Admin Only Panel",
+      "contentContainerClass": "flex h-[200px] items-center justify-center p-6 bg-yellow-800/20",
+      "textClass": "font-semibold",
+      "isAdminOnly": true
+    }
+  ]
+}
