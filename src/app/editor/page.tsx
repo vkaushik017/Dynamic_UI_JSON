@@ -4,6 +4,7 @@ import { ResizableLayoutEditor } from "@/components/resizable/resizable-layout-e
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { useState } from "react";
+import initialConfig from "../../data/defaultConfig.json";
 
 export default function Home() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -21,7 +22,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <ResizableLayoutEditor isAdmin={isAdmin} />
+      <ResizableLayoutEditor initialConfig={initialConfig} isAdmin={isAdmin} />
     </div>
   );
 }

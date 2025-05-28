@@ -1,0 +1,46 @@
+export const codeTemplate = `// Edit this code to customize your layout
+const myConfig = {
+  direction: "vertical",
+  className: "max-w-full rounded-lg h-full",
+  panels: [
+    {
+      id: "header-panel",
+      defaultSize: 15,
+      minSize: 10,
+      maxSize: 20,
+      contentContainerClass: "flex items-center justify-between p-4 bg-muted/20",
+      content: "Header Content"
+    },
+    {
+      id: "content-panel",
+      defaultSize: 85,
+      minSize: 50,
+      maxSize: 90,
+      nested: {
+        direction: "horizontal",
+        className: "h-full",
+        panels: [
+          {
+            id: "main-content",
+            defaultSize: 70,
+            minSize: 50,
+            maxSize: 80,
+            contentContainerClass: "p-4 h-full",
+            content: "Main Content Area"
+          },
+          {
+            id: "sidebar",
+            defaultSize: 30,
+            minSize: 20,
+            maxSize: 40,
+            contentContainerClass: "p-4 border-l h-full bg-muted/10",
+            content: "Sidebar Content"
+          }
+        ]
+      }
+    }
+  ]
+};
+
+// Return your config to update the layout
+return myConfig;`;
